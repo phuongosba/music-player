@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon.png">
+
+</head>
+<body>
+    <div class="player bd-grid">
+        <!-- Dashboard  -->
+        <div class="dashboard">
+            <div class="music-play">                
+                <!-- header -->
+                <header>
+                    <div class="now-playing">
+                        <h2>Music</h2>
+                        <h4>Singer</h4>
+                    </div>
+                    <div class="option-icon">
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                </header>
+    
+                <!-- CD -->
+                <div class="cd">
+                    <div class="cd-thumb">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- progress -->
+            <div class="music-progress">
+                <input id="progress" class="progress" type="range" name="range" value="0" step="1" min="0" max="100">
+                <audio id="audio" src="" type="audio/mp3"></audio>
+            </div>
+        
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-shuffle">
+                    <i class='bx bx-shuffle'></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class='bx bx-skip-previous'></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class='bx bx-pause'></i>
+                    <i class='bx bx-play'></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class='bx bx-skip-next'></i>
+                </div>
+                <div class="btn btn-repeat">
+                    <i class='bx bx-repeat'></i>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Playlist -->
+        <div class="playlist">
+            <div class="playlist-toggle">
+                <p>SHOW PLAYLIST</p>
+                <i class='bx bxs-playlist'></i>
+            </div>
+
+            <div class="list-songs">
+                <div class="playlist-header">
+                    <i class='bx bx-x'></i>
+                    <p>US-UK Playlist</p>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                </div>
+                
+                <div class="songs">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script  -->
+    <script src="./assets/js/js.js"></script>
+</body>
+</html>
