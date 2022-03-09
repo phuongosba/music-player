@@ -189,7 +189,7 @@ header h4 {
       display: none;
       position: fixed;
       left: 0;
-      bottom: -100%;
+      top: -100%;
       width: 100%;
       height: 100vh;
       padding: 2rem;
@@ -209,7 +209,7 @@ header h4 {
 }
 
 .show {
-    bottom: 0;
+    top: 0;
     display: block;
 }
 /*===== SONG =====*/
