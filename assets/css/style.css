@@ -186,6 +186,7 @@ header h4 {
 
 @media screen and (max-width: 960px) {
     .list-songs {
+      display: none;
       position: fixed;
       left: 0;
       bottom: -100%;
@@ -209,6 +210,7 @@ header h4 {
 
 .show {
     bottom: 0;
+    display: block;
 }
 /*===== SONG =====*/
 
